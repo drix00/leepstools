@@ -1,10 +1,10 @@
-pip
+pip==9.0.1
 bumpversion==0.5.3
 wheel
 watchdog
 flake8
 tox
-coverage
+coverage==4.4.1
 Sphinx
 cryptography
 PyYAML
