@@ -8,13 +8,11 @@ sudo: false
 
 language: python
 python:
-  - 2.7
   - 3.3
   - 3.4
   - 3.5
   - 3.6
   # PyPy versions
-  - "pypy"
   - "pypy3"
 
 # command to install dependencies, e.g. pip install -r requirements.txt --use-mirrors
