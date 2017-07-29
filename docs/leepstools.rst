@@ -1,6 +1,13 @@
 leepstools package
 ==================
 
+Subpackages
+-----------
+
+.. toctree::
+
+    leepstools.file
+
 Submodules
 ----------
 

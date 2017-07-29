@@ -41,10 +41,10 @@ This package was created with Cookiecutter_ and the `audreyr/cookiecutter-pypack
 .. _`audreyr/cookiecutter-pypackage`: https://github.com/audreyr/cookiecutter-pypackage
 
 Badges
-======
+------
 
 pypy
-----
+====
 
 .. image:: https://img.shields.io/pypi/v/leepstools.svg
    :target: https://pypi.python.org/pypi/leepstools
@@ -72,7 +72,7 @@ pypy
    :target: https://pypi.python.org/pypi/leepstools
 
 pyup
-------
+====
 
 .. image:: https://pyup.io/repos/github/drix00/leepstools/shield.svg
    :target: https://pyup.io/repos/github/drix00/leepstools/
@@ -83,7 +83,7 @@ pyup
    :alt: Python 3
 
 GitHub
-------
+======
 
 .. image:: https://img.shields.io/github/issues/drix00/leepstools.svg
    :target: https://github.com/drix00/leepstools/issues
