@@ -78,6 +78,10 @@ GitHub
    :target: https://pyup.io/repos/github/drix00/leepstools/
    :alt: Updates
 
+.. image:: https://pyup.io/repos/github/drix00/leepstools/python-3-shield.svg
+   :target: https://pyup.io/repos/github/drix00/leepstools/
+   :alt: Python 3
+
 .. image:: https://img.shields.io/github/issues/drix00/leepstools.svg
    :target: https://github.com/drix00/leepstools/issues
 
