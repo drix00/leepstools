@@ -71,7 +71,7 @@ pypy
 .. image:: https://img.shields.io/pypi/status/leepstools.svg
    :target: https://pypi.python.org/pypi/leepstools
 
-GitHub
+pyup
 ------
 
 .. image:: https://pyup.io/repos/github/drix00/leepstools/shield.svg
@@ -81,6 +81,9 @@ GitHub
 .. image:: https://pyup.io/repos/github/drix00/leepstools/python-3-shield.svg
    :target: https://pyup.io/repos/github/drix00/leepstools/
    :alt: Python 3
+
+GitHub
+------
 
 .. image:: https://img.shields.io/github/issues/drix00/leepstools.svg
    :target: https://github.com/drix00/leepstools/issues
