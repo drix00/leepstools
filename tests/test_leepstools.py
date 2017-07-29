@@ -62,7 +62,7 @@ class TestLeepstools(unittest.TestCase):
         First test to check if the testcase is working with the testing framework.
         """
 
-        self.fail("Test if the testcase is working.")
+        # self.fail("Test if the testcase is working.")
         self.assert_(True)
 
 
