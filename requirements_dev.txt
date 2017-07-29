@@ -6,5 +6,5 @@ flake8
 tox
 coverage
 Sphinx
-cryptography
+cryptography==2.0.2
 PyYAML
