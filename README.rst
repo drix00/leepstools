@@ -30,7 +30,12 @@ Python script to use LEEPS Monte Carlo code
 Features
 --------
 
-* TODO
+* Read and write LEEPS input file.
+
+ToDo
+----
+
+.. todolist::
 
 Credits
 -------

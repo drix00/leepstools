@@ -37,3 +37,28 @@ Main package for leepstools project.
 __author__ = """Hendrix Demers"""
 __email__ = 'hendrix.demers@mail.mcgill.ca'
 __version__ = '0.1.0'
+
+# .. todo:: Write comment in input file.
+# .. todo:: Add option for location of elastic data files.
+# .. todo:: Generate elastic file.
+# .. todo:: Add option for location of mcslab program.
+# .. todo:: Generate folder for simulation.
+# .. todo:: Generate folder for an experiment (a set of simulations).
+# .. todo:: Generate batch files for an experiment.
+# .. todo:: Read result file: angle.dat.
+# .. todo:: Read result file: dchar.dat.
+# .. todo:: Read result file: ddose.dat.
+# .. todo:: Read result file: enelbk.dat.
+# .. todo:: Read result file: eneltr.dat.
+# .. todo:: Read result file: escatl.dat.
+# .. todo:: Read result file: escatm.dat.
+# .. todo:: Read result file: mcslab.dat.
+# .. todo:: Read result file: mcslab-res.dat.
+# .. todo:: Read result file: spectrum.dat.
+# .. todo:: Read result file: tlab.dat.
+# .. todo:: Read result file: tlbk.dat.
+# .. todo:: Read result file: tltr.dat.
+# .. todo:: Read input file: .ees.
+# .. todo:: Read input file: .oos.
+# .. todo:: Read input file: eeldxNNN.p08.
+# .. todo:: Generate batch files and start simulations on McGill HPC.
