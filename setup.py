@@ -6,7 +6,7 @@
 
 .. moduleauthor:: Hendrix Demers <hendrix.demers@mail.mcgill.ca>
 
-Setup and configuration file for project leepstools
+Setup and configuration file for project leepstools.
 """
 
 ###############################################################################
