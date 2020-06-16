@@ -29,8 +29,8 @@ Tests for the module :py:mod:`leepstools.file.angle`.
 import unittest
 
 # Third party modules.
-from nose.plugins.skip import SkipTest
 from pkg_resources import resource_filename  # @UnresolvedImport
+import pytest
 
 # Local modules.
 
@@ -66,7 +66,7 @@ class TestAngle(unittest.TestCase):
         """
 
         # self.fail("Test if the testcase is working.")
-        self.assert_(True)
+        self.assertTrue(True)
 
     def test_read(self):
         """
@@ -75,7 +75,7 @@ class TestAngle(unittest.TestCase):
 
         file_path = resource_filename(__name__, "../../test_data/li2o/angle.dat")
         if is_bad_file(file_path):  # pragma: no cover
-            raise SkipTest
+            pytest.skip("File not found: {}".format(file_path))
 
         angle_file = Angle()
         self.assertEqual(0, len(angle_file.theta_deg))
@@ -99,10 +99,4 @@ class TestAngle(unittest.TestCase):
         self.assertAlmostEqual(2.915756E-05, angle_file.stu_1_sr[-1])
 
         # self.fail("Test if the testcase is working.")
-        self.assert_(True)
-
-
-if __name__ == '__main__':  # pragma: no cover
-    import nose
-
-    nose.runmodule()
+        self.assertTrue(True)

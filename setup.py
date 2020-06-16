@@ -49,8 +49,9 @@ requirements = [
 ]
 
 test_requirements = [
-    "nose",
-    "coverage"
+    "pytest",
+    "coverage",
+    "pytest-cov"
 ]
 
 description = "Python script to use LEEPS Monte Carlo code"

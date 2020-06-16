@@ -64,7 +64,7 @@ class TestComposition(unittest.TestCase):
         """
 
         # self.fail("Test if the testcase is working.")
-        self.assert_(True)
+        self.assertTrue(True)
 
     def test_add_element(self):
         """
@@ -87,10 +87,4 @@ class TestComposition(unittest.TestCase):
         self.assertAlmostEqual(1.0, composition.elements[1].stoichiometric_fraction)
 
         # self.fail("Test if the testcase is working.")
-        self.assert_(True)
-
-
-if __name__ == '__main__':  # pragma: no cover
-    import nose
-
-    nose.runmodule()
+        self.assertTrue(True)

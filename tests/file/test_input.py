@@ -30,8 +30,8 @@ import unittest
 import os.path
 
 # Third party modules.
-from nose.plugins.skip import SkipTest
 from pkg_resources import resource_filename  # @UnresolvedImport
+import pytest
 
 # Local modules.
 
@@ -68,7 +68,7 @@ class TestInput(unittest.TestCase):
         """
 
         # self.fail("Test if the testcase is working.")
-        self.assert_(True)
+        self.assertTrue(True)
 
     def test_read(self):
         """
@@ -77,7 +77,7 @@ class TestInput(unittest.TestCase):
 
         file_path = resource_filename(__name__, "../../test_data/al/mcslab.in")
         if is_bad_file(file_path):  # pragma: no cover
-            raise SkipTest
+            raise pytest.skip("File not found: {}".format(file_path))
 
         input_file = Input()
 
@@ -105,7 +105,7 @@ class TestInput(unittest.TestCase):
         self.assertEqual((1, 1), input_file.random_number_seed.value)
 
         # self.fail("Test if the testcase is working.")
-        self.assert_(True)
+        self.assertTrue(True)
 
     def test_write(self):
         """
@@ -114,7 +114,7 @@ class TestInput(unittest.TestCase):
 
         file_path = resource_filename(__name__, "../../test_data/al/mcslab.in")
         if is_bad_file(file_path):  # pragma: no cover
-            raise SkipTest
+            raise pytest.skip("File not found: {}".format(file_path))
 
         input_file_ref = Input()
         input_file_ref.read(file_path)
@@ -158,10 +158,4 @@ class TestInput(unittest.TestCase):
         os.remove(file_path)
 
         # self.fail("Test if the testcase is working.")
-        self.assert_(True)
-
-
-if __name__ == '__main__':  # pragma: no cover
-    import nose
-
-    nose.runmodule()
+        self.assertTrue(True)

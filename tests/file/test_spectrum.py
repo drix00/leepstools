@@ -29,8 +29,8 @@ Tests for the module :py:mod:`leepstools.file.spectrum`.
 import unittest
 
 # Third party modules.
-from nose.plugins.skip import SkipTest
 from pkg_resources import resource_filename  # @UnresolvedImport
+import pytest
 
 # Local modules.
 
@@ -67,7 +67,7 @@ class TestSpectrum(unittest.TestCase):
         """
 
         # self.fail("Test if the testcase is working.")
-        self.assert_(True)
+        self.assertTrue(True)
 
     def test_read(self):
         """
@@ -76,7 +76,7 @@ class TestSpectrum(unittest.TestCase):
 
         file_path = resource_filename(__name__, "../../test_data/li2o/spectrum.dat")
         if is_bad_file(file_path):  # pragma: no cover
-            raise SkipTest
+            pytest.skip("File not found: {}".format(file_path))
 
         spectrum_file = Spectrum()
         self.assertEqual(0, len(spectrum_file.energy_eV))
@@ -104,10 +104,4 @@ class TestSpectrum(unittest.TestCase):
         self.assertAlmostEqual(3.089428E-05, spectrum_file.stu_1_eVe[-1])
 
         # self.fail("Test if the testcase is working.")
-        self.assert_(True)
-
-
-if __name__ == '__main__':  # pragma: no cover
-    import nose
-
-    nose.runmodule()
+        self.assertTrue(True)

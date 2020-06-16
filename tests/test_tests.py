@@ -27,12 +27,10 @@ Tests for the package :py:mod:`tests`.
 
 # Standard library modules.
 import unittest
-import os.path
 from tempfile import TemporaryFile
 
 # Third party modules.
 from pkg_resources import resource_filename  # @UnresolvedImport
-from nose.plugins.skip import SkipTest
 
 # Local modules.
 
@@ -69,7 +67,7 @@ class TestPath(unittest.TestCase):
         """
 
         # self.fail("Test if the testcase is working.")
-        self.assert_(True)
+        self.assertTrue(True)
 
     def create_git_lfs_file(self):
         self.git_lfs_file = TemporaryFile("w+t")
@@ -108,9 +106,3 @@ class TestPath(unittest.TestCase):
         self.assertEqual(True, tests.is_bad_file(file_path))
 
         # self.fail("Test if the testcase is working.")
-
-
-if __name__ == '__main__':  # pragma: no cover
-    import nose
-
-    nose.runmodule()
